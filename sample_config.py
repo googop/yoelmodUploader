@@ -2,21 +2,21 @@ import os
 
 class Config(object):
     # get a token from https://chatbase.com
-    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "834554042")
+    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "2")
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5309968982:AAENlj6hR5GX5OxF4k914JELQ24fyL8lK90")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "538l")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 10565113))
-    API_HASH = os.environ.get("d2220b87fb12fc430dc8fcebbb03d95c")
+    API_HASH = os.environ.get("d2220b895c")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "834554042").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "82").split())
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "@yoelmod_bot")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
     TG_MAX_FILE_SIZE = 2097152000
